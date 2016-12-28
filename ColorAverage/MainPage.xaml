@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="ColorAverage.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ColorAverage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel x:Name="rootgrid" VerticalAlignment="Center" HorizontalAlignment="Center" >
+        <Image Source="{Binding ElementName=ImageLink,Path=Text}" MaxHeight="480" MaxWidth="480"/>
+        <TextBox x:Name="ImageLink" PlaceholderText="Link" Width="340" TextChanged="ImageLink_TextChanged" Margin="0,15"/>
+    </StackPanel>
+</Page>
